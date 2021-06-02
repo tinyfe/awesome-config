@@ -7,11 +7,9 @@
     "unit"
   ],
   "author": "Rain120 <1085131904@qq.com>",
-  "homepage": "https://github.com/tinyfe/one-utils#readme",
+  "homepage": "https://github.com/tinyfe/fc#readme",
   "license": "MIT",
   "main": "lib/index.js",
-  "module": "lib/index.es.js",
-  "browser": "lib/browser.js",
   "typings": "lib/@types/index.d.ts",
   "directories": {
     "lib": "lib",
@@ -25,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyfe/one-utils.git"
+    "url": "git+https://github.com/tinyfe/fc.git"
   },
   "bugs": {
-    "url": "https://github.com/tinyfe/one-utils/issues"
+    "url": "https://github.com/tinyfe/fc/issues"
   },
   "scripts": {
     "test": "jest --watch"
@@ -37,8 +35,6 @@
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25"
   },
-  "dependencies": {
-    "@tinyfe/color-keywords": "0.0.2"
-  },
+  "dependencies": {},
   "gitHead": "a3bd6d8f25ebe1ae44763b6887c07296248f2e64"
 }

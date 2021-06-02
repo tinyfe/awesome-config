@@ -92,34 +92,34 @@ function config({ location, pkgJson }) {
   const plugins = [tsPlugin, ...commonPlugins];
 
   return {
-    umd: compress => {
-      let file = path.join(location, 'lib', 'browser.js');
-      if (compress) {
-        plugins.push(terser());
-        file = path.join(location, 'lib', 'browser.min.js');
-      }
+    // umd: compress => {
+    //   let file = path.join(location, 'lib', 'browser.js');
+    //   if (compress) {
+    //     plugins.push(terser());
+    //     file = path.join(location, 'lib', 'browser.min.js');
+    //   }
 
-      const globals = {};
-      external.forEach(pkgName => {
-        globals[pkgName] = pkgName;
-      });
+    //   const globals = {};
+    //   external.forEach(pkgName => {
+    //     globals[pkgName] = pkgName;
+    //   });
 
-      return {
-        input,
-        external: globalName === '' ? {} : external,
-        output: [
-          {
-            file,
-            name: globalName,
-            format: 'umd',
-            exports: 'named',
-            sourcemap: false,
-            globals,
-          },
-        ],
-        plugins,
-      };
-    },
+    //   return {
+    //     input,
+    //     external: globalName === '' ? {} : external,
+    //     output: [
+    //       {
+    //         file,
+    //         name: globalName,
+    //         format: 'umd',
+    //         exports: 'named',
+    //         sourcemap: false,
+    //         globals,
+    //       },
+    //     ],
+    //     plugins,
+    //   };
+    // },
     module: () => {
       return {
         inlineDynamicImports: true,
@@ -127,18 +127,18 @@ function config({ location, pkgJson }) {
         // 维持包文件指定id文件维持外链，不参与打包构建
         external,
         output: [
-          {
-            file: path.join(location, pkgJson.module),
-            // 将软件包保存为 ES 模块文件
-            format: 'es',
-            sourcemap: true,
-          },
+          // {
+          //   file: path.join(location, pkgJson.module),
+          //   // 将软件包保存为 ES 模块文件
+          //   format: 'es',
+          //   sourcemap: true,
+          // },
           {
             // CommonJS, 适用于 Node 或 Browserify / webpack
             format: 'cjs',
             file: path.join(location, pkgJson.main),
             exports: 'auto',
-            sourcemap: true,
+            sourcemap: false,
           },
         ],
         plugins,
@@ -167,21 +167,21 @@ switch (NODE_ENV) {
     break;
 }
 
-function getUMD() {
-  const configs = pkgs.filter(pkg => pkg.pkgJson.browser);
-  return configs
-    .map(config => makeRollupConfig({ ...config, type: 'umd' }))
-    .concat(
-      configs.map(config =>
-        makeRollupConfig({
-          ...config,
-          type: 'umd',
-          compress: false,
-          visualizer: false,
-        }),
-      ),
-    );
-}
+// function getUMD() {
+//   const configs = pkgs.filter(pkg => pkg.pkgJson.browser);
+//   return configs
+//     .map(config => makeRollupConfig({ ...config, type: 'umd' }))
+//     .concat(
+//       configs.map(config =>
+//         makeRollupConfig({
+//           ...config,
+//           type: 'umd',
+//           compress: false,
+//           visualizer: false,
+//         }),
+//       ),
+//     );
+// }
 
 function getModule() {
   const configs = [...pkgs];
@@ -189,7 +189,7 @@ function getModule() {
 }
 
 function getAll() {
-  return [...getModule(), ...getUMD()];
+  return [...getModule()];
 }
 
 export default Promise.all(promises);
