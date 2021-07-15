@@ -22,10 +22,7 @@ module.exports = webpackEnv => {
 
   const getStyleLoaders = (cssOptions, preProcessor, preOptions = {}) => {
     const loaders = [
-      isEnvDevelopment && require.resolve('style-loader'),
-      isEnvProduction && {
-        loader: MiniCssExtractPlugin.loader,
-      },
+      isEnvDevelopment ? require.resolve('style-loader') : MiniCssExtractPlugin.loader,
       {
         loader: require.resolve('css-loader'),
         options: cssOptions,
@@ -94,10 +91,6 @@ module.exports = webpackEnv => {
     resolve: {
       extensions: paths.moduleFileExtensions.map(ext => `.${ext}`),
     },
-    // externals: {
-    //     react: 'React',
-    //     'react-dom': 'ReactDOM',
-    // },
     optimization: {
       minimize: isEnvProduction,
       minimizer: [
@@ -241,18 +234,6 @@ module.exports = webpackEnv => {
       new CleanWebpackPlugin(),
       new webpack.HotModuleReplacementPlugin(),
     ],
-    devServer: {
-      host: '0.0.0.0',
-      port: 9527,
-      contentBase: paths.appPublic,
-      // stats: 'errors-only',
-      clientLogLevel: 'none',
-      watchContentBase: true,
-      compress: true,
-      // open: true,
-      hot: true,
-      // historyApiFallback: true,
-    },
     performance: false,
   };
 };
