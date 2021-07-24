@@ -1,3 +1,7 @@
+process.on('unhandledRejection', err => {
+  throw err;
+});
+
 const webpack = require('webpack');
 const configFactory = require('../config/webpack.config');
 
