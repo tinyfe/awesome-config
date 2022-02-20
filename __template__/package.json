@@ -7,7 +7,7 @@
     "unit"
   ],
   "author": "Rain120 <1085131904@qq.com>",
-  "homepage": "https://github.com/tinyfe/fc#readme",
+  "homepage": "https://github.com/tinyfe/awesome-config#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/@types/index.d.ts",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyfe/fc.git"
+    "url": "git+https://github.com/tinyfe/awesome-config.git"
   },
   "bugs": {
-    "url": "https://github.com/tinyfe/fc/issues"
+    "url": "https://github.com/tinyfe/awesome-config/issues"
   },
   "scripts": {
     "test": "jest --watch"

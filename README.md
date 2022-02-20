@@ -1,20 +1,20 @@
 <h3 align="center">
-  <a href="https://github.com/tinyfe/fc">Fast, Config</a>
+  <a href="https://github.com/tinyfe/awesome-config">Awesome Config</a>
 </h3>
 
 <div align="center">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa1cb15a-9a66-42df-ab3b-6cf8a607c9c4/deploy-status)](https://app.netlify.com/sites/lerna-quick-start/deploys) [![Coverage Status](https://coveralls.io/repos/github/Rain120/lerna-quick-start/badge.svg?branch=master)](https://coveralls.io/github/Rain120/lerna-quick-start?branch=master) [![Build Status](https://travis-ci.org/Rain120/lerna-quick-start.svg?branch=master)](https://travis-ci.org/Rain120/lerna-quick-start)
 
-[![GitHub watchers](https://img.shields.io/github/watchers/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/fc/watchers)
-[![STAR](https://img.shields.io/github/stars/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/fc/stargazers) [![FORK](https://img.shields.io/github/forks/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/fc/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/awesome-config/watchers)
+[![STAR](https://img.shields.io/github/stars/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/awesome-config/stargazers) [![FORK](https://img.shields.io/github/forks/rain120/lerna-quick-start?style=social)](https://github.com/tinyfe/awesome-config/network/members)
 
-[![ISSUES](https://img.shields.io/github/issues/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/fc/issues) [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/fc/pulls) [![COMMIT](https://img.shields.io/github/last-commit/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/fc/commits/master)
+[![ISSUES](https://img.shields.io/github/issues/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/awesome-config/issues) [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/awesome-config/pulls) [![COMMIT](https://img.shields.io/github/last-commit/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/awesome-config/commits/master)
 
-<!-- [![TEST](https://github.com/tinyfe/fc/workflows/.github/workflows/test.yml/badge.svg)](https://github.com/tinyfe/fc/actions) -->
+<!-- [![TEST](https://github.com/tinyfe/awesome-config/workflows/.github/workflows/test.yml/badge.svg)](https://github.com/tinyfe/awesome-config/actions) -->
 
 ![LANGUAGES](https://img.shields.io/github/languages/top/rain120/lerna-quick-start?style=flat-square)
-[![VERSION](https://img.shields.io/github/package-json/v/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/fc/blob/master/package.json) [![LICENSE](https://img.shields.io/github/license/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/fc/blob/master/LICENSE)
+[![VERSION](https://img.shields.io/github/package-json/v/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/awesome-config/blob/master/package.json) [![LICENSE](https://img.shields.io/github/license/rain120/lerna-quick-start?style=flat-square)](https://github.com/tinyfe/awesome-config/blob/master/LICENSE)
 
 </div>
 
@@ -37,10 +37,7 @@ Welcome to the Lerna Quick Start.
 ### 🔨 Usage
 
 ```sh
-git clone https://github.com/tinyfe/fc
-
-# 还在计划写一个 cli
-mv lerna-quick-start your-name
+git clone https://github.com/tinyfe/awesome-config
 ```
 
 #### Scripts
@@ -133,7 +130,7 @@ mv lerna-quick-start your-name
 
 ### 📝 License
 
-[MIT](https://github.com/tinyfe/fc/blob/master/LICENSE)
+[MIT](https://github.com/tinyfe/awesome-config/blob/master/LICENSE)
 
 Copyright © 2020-present [Rain120](https://github.com/Rain120).
 
